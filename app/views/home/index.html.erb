@@ -1,4 +1,4 @@
-<h1>list of movies</h1>
-<p>3 idiots</p>
-<p>DDLJ</p>
-<p>KGF</p>
+<% @movies.each do |movie| %>
+<p><%= movie.Name %></p>
+<p><%= movie.Rating %></p>
+<% end %>
