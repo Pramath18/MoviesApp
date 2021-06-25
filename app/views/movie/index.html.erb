@@ -1,7 +1,8 @@
 <% @movies.each do |movie| %>
-<p><%= movie.Name %></p>
-<p><%= movie.Rating %></p>
-<p><%= movie.summary %></p>
-<p><%= movie.released_on.strftime("%d-%B-%Y") %></p>
-
+<p><%= movie.Name%></p> 
+<%# <p><%= movie.Rating</p> %>
+<%# <p><%= movie.summary</p>  %>
+<%# <p><%= movie.released_on.strftime("%d-%B-%Y")</p>  %>
+<%= link_to "show", movie%>
 <% end %>
+
